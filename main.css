@@ -1,0 +1,633 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+
+#imapri {
+
+     width: 100%;
+     height: 700px;
+     object-fit: cover;
+}
+
+
+body {
+     header {
+          
+          #titulos {
+ 
+               position: absolute;
+               top: 500px;
+               margin-left: 5vw;
+               color: #FFFFFF;
+
+               #tt3 {
+
+                    color: #B4B7B7;
+                    font-size: 40px;
+
+               }
+
+               #tt4 {
+                    color: #FFFFFF;
+                    font-size: 80px;
+
+               }
+
+
+               #bot1 {
+                    color: white;
+                    background-color: transparent;
+                    border-color: white;
+                    border-radius: 50px;
+                    padding: 15px;
+                    border: 1px solid;
+
+               }
+
+          }
+
+
+          nav {
+               width: 100%;
+               height: 100px;
+               background-color: rgba(39, 2, 2, 0.651);
+               display: grid;
+               grid-template-columns: 3fr 2fr;
+               align-items: center;
+               position: fixed;
+               top: 0;
+
+
+               #logo {
+                    margin-left: 100px;
+               }
+
+               #logo-mobile {
+                    display: none;
+                    border: solid 1px white;
+                    border-radius: 50%;
+                    padding: 10px;
+
+               }
+
+               .links {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    gap: 40px;
+
+
+
+                    a {
+                         text-decoration: none;
+                         color: white;
+                    }
+
+                    .idiomas {
+                         display: grid;
+                         grid-template-columns: repeat(3, 1fr);
+                         align-items: center;
+
+                         img {
+                              margin-right: 40px;
+                         }
+
+
+
+                    }
+
+                    .grey {
+                         color: grey;
+                    }
+
+                    .registro {
+                         display: grid;
+                         grid-template-columns: 1fr 1px 1fr;
+
+                         a {
+                              justify-self: center;
+                         }
+                    }
+
+                    #bar {
+                         height: 100%;
+                         width: 1px;
+                         background-color: white;
+                    }
+
+               }
+
+
+
+          }
+
+     }
+
+     .seccion {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 100px;
+
+          .galeria {
+
+               display: grid;
+               grid-template-columns: repeat(12, 1fr);
+               gap: 20px;
+
+
+               .lado1 {
+
+                    grid-column: span 2;
+
+
+               }
+
+               .lina {
+
+                    grid-column: span 5;
+                    position: relative;
+
+                    .text2 {
+
+                         position: absolute;
+                         transform: translateY(-100%);
+                         font-size: 30px;
+                         padding: 20px;
+                    }
+
+                    .tx1 {
+                         color: white;
+                    }
+
+                    .tx2 {
+
+                         color: black;
+                         background-color: white;
+                         width: 100%;
+                    }
+               }
+
+
+
+               img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+               }
+
+
+
+          }
+
+          .contenido {
+
+               display: grid;
+               padding-right: 100px;
+
+
+
+
+               .botones {
+
+                    display: grid;
+                    grid-template-columns: 1fr 3fr 1fr;
+                    align-items: end;
+
+                    .flecha {
+
+                         display: none;
+                    }
+
+                    .bot {
+
+                         background-color: transparent;
+                         border: none;
+
+                    }
+
+                    .medio1 {
+
+                         background-color: transparent;
+                         border-radius: 48px;
+                         height: fit-content;
+                         font-size: 24px;
+                         padding: 12px;
+                    }
+
+                    .prev {
+
+                         color: #B4B7B7;
+                    }
+
+                    .next {
+
+                         color: #DF991B;
+
+                    }
+
+
+               }
+
+               .text3 {
+
+                    font-size: 40px;
+                    text-align: right;
+
+                    h6 {
+
+                         color: orange;
+                    }
+
+
+
+               }
+          }
+
+
+     }
+
+     .deve {
+          margin-top: 40px;
+          text-align: center;
+
+          .tt1 {
+               color: #DF991B;
+               font-size: 40px;
+          }
+          .tt2 {
+               color: #000000;
+               font-size: 80px;
+          }
+     }
+
+     section {
+
+ 
+          border-top: 500px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px 10px;
+          padding: 50px;
+
+
+          #im {
+               max-width: 100%;
+               margin-bottom: 20px;
+          }
+
+          .te5 {
+               margin-left: 20px;
+               font-size: 25px;
+               color: #464547;
+          }
+
+
+          .te4 {
+               margin-left: 20px;
+               font-size: 45px;
+               color: #000000;
+
+          }
+
+
+     }
+
+
+
+     footer {
+
+          margin-top:200px;
+          position: relative;
+          height: 500px;
+          width: 100%;
+          background-color: black;
+
+
+
+          .negro {
+
+               color: white;
+               display: grid;
+               width: 90%;
+               margin: auto;
+               gap: 20px;
+
+               .enlace {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 24px;
+
+                    .uno {
+
+                         align-self: self-end;
+                         font-size: 25px;
+                    }
+
+
+
+                    .dos {
+                         align-self: center;
+                    }
+
+                    .tres {
+
+                         align-self: self-end;
+
+                         #separado {
+
+                              margin-top: 20px;
+                         }
+                    }
+
+
+                    .medio {
+
+                         justify-self: center;
+                         font-size: 25px;
+
+
+                    }
+
+                    .ultima {
+                         text-align: right;
+                         align-self: self-end;
+                         font-size: 35px;
+                    }
+
+
+                    ul {
+                         li {
+                              list-style: none;
+                         }
+                    }
+
+
+               }
+
+               .copy {
+ 
+                    border-top: solid 2px white;
+                    color: #FFFFFF;
+                    font-size: 20px;
+ 
+
+                    p {
+                         text-align: center;
+  
+                    }
+               }
+          }
+
+          .gris {
+
+               background-color: #444;
+               width: 90%;
+               margin: auto;
+               transform: translateY(-50%);
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               align-items: center;
+
+
+               .Segunda {
+                    display: grid;
+                    padding: 100px;
+                    gap: 10px;
+
+               }
+
+               input {
+                    background-color: transparent;
+                    border: solid 1px gray;
+                    border-radius: 24px;
+                    padding: 10px 20px;
+               }
+
+               button {
+                    background-color: transparent;
+                    border: solid 1px orange;
+                    color: orange;
+                    border-radius: 24px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+               }
+
+               p {
+                    margin-left: 20px;
+                    color: white;
+                    font-size: 20px;
+               }
+          }
+
+
+          #textfoo {
+               font-size: 30px;
+               color: white;
+               justify-self: center;
+
+
+               span {
+                    color: orange;
+               }
+          }
+
+     }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+     html {
+          background-color: white;
+
+          nav {
+
+               #logo {
+                    display: none;
+               }
+
+               #logo-mobile {
+
+                    display: inline;
+                    margin-left: 30px;
+                    height: 40px;
+               }
+
+               .links {
+
+                    grid-template-columns: 1fr;
+
+
+                    .idiomas {
+
+                         grid-template-columns: 1fr;
+                         justify-items: end;
+
+                         a {
+                              display: none;
+                         }
+                    }
+
+                    .registro {
+
+                         display: none
+                    }
+               }
+          }
+
+          .seccion {
+
+               .contenido {
+
+
+
+                    .te2 {
+                         display: none;
+                    }
+
+                    .te1 {
+                         margin-top: 20px;
+                         text-align: left;
+                         font-size: 30px;
+                         color: #DF991B;
+                    }
+
+                    .botones {
+
+
+                         .flecha {
+                              position: relative;
+                              ;
+                              float: left;
+
+                              display: inline;
+                              border-radius: transparent;
+                         }
+
+                         .medio1 {
+
+                              justify-items: start;
+                              background-color: transparent;
+                              border: none;
+                              color: #DF991B;
+                              font-size: 25px;
+                         }
+
+                         .prev {
+
+                              display: none;
+                         }
+
+                         .next {
+
+                              display: none;
+                         }
+
+
+                    }
+               }
+
+               .galeria {
+
+                    .lado1 {
+
+                         display: none;
+                    }
+
+                    .lado2 {
+
+                         grid-column: span 10;
+                    }
+
+                    .lado3 {
+
+                         grid-column: span 2;
+                    }
+
+                    .text2 {
+                         display: none;
+                    }
+               }
+
+          }
+
+
+
+          section {
+
+               grid-template-columns: 1fr;
+               gap: 10px 10px;
+
+               .te4 {
+
+                    display: none;
+               }
+
+               .te5 {
+
+                    display: none;
+
+               }
+
+
+          }
+
+
+          footer {
+               .gris {
+
+                    display: none;
+               }
+
+               .negro {
+
+                    .enlace {
+
+                         grid-template-columns: repeat(2, 1fr);
+
+                         .medio {
+                              margin-top: 15px;
+                              justify-self: baseline;
+                              font-size: 18px;
+                              font-weight: lighter;
+                              color: #aaa;
+
+                         }
+
+                         .uno {
+                              grid-column: span 2;
+                         }
+
+                         .ultima {
+
+                              text-align: left;
+                              justify-self: baseline;
+                              grid-column: span 2;
+                              margin-top: 20px;
+
+                         }
+                    }
+
+                    .copy {
+
+                         display: none;
+                    }
+               }
+
+          }
+
+     }
+
+}
